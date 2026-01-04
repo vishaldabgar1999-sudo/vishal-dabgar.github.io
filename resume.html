@@ -6,20 +6,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+:root{
+  --bg:#020617;
+  --card:#0b1220;
+  --border:#1e293b;
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --primary:#38bdf8;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+html, body{
+  background:var(--bg);
+  color:var(--text);
+}
+
 body{
-  font-family: Arial, sans-serif;
-  margin:40px;
-  color:#111;
+  padding:40px;
   line-height:1.6;
 }
-h1{margin-bottom:4px;}
+
+h1{
+  font-size:28px;
+  margin-bottom:4px;
+}
+
 h2{
-  margin-top:30px;
-  border-bottom:2px solid #ddd;
+  margin-top:28px;
+  font-size:18px;
+  border-bottom:1px solid var(--border);
   padding-bottom:6px;
 }
-p{margin:6px 0;}
-ul{margin:6px 0 6px 20px;}
+
+p{
+  margin:6px 0;
+  color:var(--text);
+}
+
+ul{
+  margin:6px 0 6px 18px;
+}
+
+li{
+  margin-bottom:4px;
+}
+
+a{
+  color:var(--primary);
+  text-decoration:none;
+}
 </style>
 </head>
 
@@ -33,38 +74,33 @@ ul{margin:6px 0 6px 20px;}
 
 <h2>Professional Summary</h2>
 <p>
-Software Developer with strong fundamentals in C#, .NET, SQL, and web technologies.
+Software Developer with strong fundamentals in C#, .NET, SQL, and backend development.
 Experienced in building clean, scalable, and maintainable applications.
-Passionate about backend development and problem solving.
 </p>
 
 <h2>Technical Skills</h2>
 <ul>
-  <li><strong>Languages:</strong> C#, JavaScript, SQL</li>
-  <li><strong>Frameworks:</strong> .NET, ASP.NET</li>
-  <li><strong>Web:</strong> HTML5, CSS3</li>
-  <li><strong>Database:</strong> SQL Server</li>
-  <li><strong>Tools:</strong> Git, GitHub, Visual Studio</li>
+  <li>C#, .NET, ASP.NET</li>
+  <li>SQL Server</li>
+  <li>HTML, CSS, JavaScript</li>
+  <li>Git & GitHub</li>
 </ul>
 
 <h2>Projects</h2>
 <p><strong>Online Food Delivery System</strong></p>
 <ul>
-  <li>Developed a web-based food ordering platform.</li>
-  <li>Implemented restaurant listing and order management.</li>
-  <li>Focused on clean architecture and scalability.</li>
+  <li>Designed and developed a food ordering platform.</li>
+  <li>Implemented order and restaurant management.</li>
 </ul>
 
 <p><strong>Filestore Management System</strong></p>
 <ul>
-  <li>Built a secure file upload and management system.</li>
-  <li>Implemented access control and structured storage.</li>
+  <li>Built a secure file upload and storage system.</li>
 </ul>
 
 <p><strong>eCase Management System</strong></p>
 <ul>
-  <li>Developed a digital case and record management application.</li>
-  <li>Improved documentation handling and tracking.</li>
+  <li>Developed a digital case management solution.</li>
 </ul>
 
 <h2>Education</h2>
@@ -73,13 +109,6 @@ Sardar Patel University</p>
 
 <p><strong>Bachelor of Computer Applications (BCA)</strong><br>
 Sardar Patel University</p>
-
-<h2>Additional</h2>
-<ul>
-  <li>Strong understanding of OOP and MVC</li>
-  <li>Good problem-solving skills</li>
-  <li>Continuous learner</li>
-</ul>
 
 </body>
 </html>
