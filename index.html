@@ -25,7 +25,7 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 body{background:var(--bg);color:var(--text);}
 
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 nav{
   position:sticky;
   top:0;
@@ -47,28 +47,11 @@ nav{
   color:var(--muted);
   text-decoration:none;
   font-size:14px;
-  position:relative;
-  transition:0.3s;
 }
-.nav-links a::after{
-  content:'';
-  position:absolute;
-  left:0;
-  bottom:-6px;
-  width:0;
-  height:2px;
-  background:var(--primary);
-  transition:0.3s;
-}
-.nav-links a:hover{
-  color:var(--primary);
-}
-.nav-links a:hover::after{
-  width:100%;
-}
+.nav-links a:hover{color:var(--primary);}
 .hamburger{display:none;font-size:26px;cursor:pointer;}
 
-/* ================= SIDEBAR ================= */
+/* SIDEBAR */
 .sidebar{
   position:fixed;
   top:0;
@@ -87,16 +70,14 @@ nav{
   margin:20px 0;
   color:var(--text);
   text-decoration:none;
-  transition:0.3s;
 }
-.sidebar a:hover{color:var(--primary);}
 .close-btn{font-size:24px;cursor:pointer;margin-bottom:30px;}
 
-/* ================= SECTIONS ================= */
+/* SECTIONS */
 section{max-width:1100px;margin:auto;padding:80px 20px;}
 h2{font-size:30px;margin-bottom:30px;}
 
-/* ================= HERO ================= */
+/* HERO */
 .hero h1{font-size:46px;font-weight:800;}
 .hero span{color:var(--primary);}
 .hero p{margin-top:14px;color:var(--muted);max-width:700px;}
@@ -110,26 +91,40 @@ h2{font-size:30px;margin-bottom:30px;}
   font-size:13px;
 }
 
-/* ================= BUTTONS ================= */
-.btn{
-  display:inline-block;
+/* BUTTON GROUP */
+.btn-group{
+  display:flex;
+  gap:14px;
   margin-top:26px;
-  margin-right:12px;
-  padding:12px 26px;
+  flex-wrap:wrap;
+}
+
+/* BUTTON (UNIFIED) */
+.btn{
+  height:46px;                     /* FIXED HEIGHT */
+  padding:0 28px;                  /* SAME HORIZONTAL PADDING */
+  display:inline-flex;             /* FLEX ALIGNMENT */
+  align-items:center;
+  justify-content:center;
   border-radius:30px;
   background:var(--primary);
-  color:#020617;
-  text-decoration:none;
+  color:#020617 !important;
   font-weight:600;
+  font-size:14px;
   cursor:pointer;
+  border:none;
+  text-decoration:none;
   transition:0.3s;
+  line-height:1;
+  white-space:nowrap;
 }
+
 .btn:hover{
-  transform:translateY(-2px) scale(1.02);
+  transform:translateY(-2px);
   box-shadow:0 10px 30px var(--glow);
 }
 
-/* ================= GRID & CARDS ================= */
+/* GRID & CARDS */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -140,15 +135,14 @@ h2{font-size:30px;margin-bottom:30px;}
   border:1px solid var(--border);
   padding:24px;
   border-radius:16px;
-  transition:0.35s ease;
+  transition:0.3s;
 }
 .card:hover{
   transform:translateY(-8px);
-  box-shadow:0 20px 40px rgba(0,0,0,0.4);
   border-color:var(--primary);
 }
 
-/* ================= BADGES ================= */
+/* BADGES */
 .badges span{
   display:inline-block;
   margin:8px 6px 0 0;
@@ -157,13 +151,9 @@ h2{font-size:30px;margin-bottom:30px;}
   border-radius:20px;
   border:1px solid var(--border);
   color:var(--primary);
-  transition:0.3s;
-}
-.badges span:hover{
-  background:rgba(56,189,248,0.12);
 }
 
-/* ================= MODAL ================= */
+/* MODAL */
 .modal{
   display:none;
   position:fixed;
@@ -171,8 +161,9 @@ h2{font-size:30px;margin-bottom:30px;}
   background:rgba(0,0,0,0.75);
   justify-content:center;
   align-items:center;
-  z-index:3000;
+  z-index:9999;
 }
+.modal.active{display:flex;}
 .modal-content{
   background:var(--card);
   width:90%;
@@ -181,11 +172,6 @@ h2{font-size:30px;margin-bottom:30px;}
   border-radius:16px;
   overflow:hidden;
   position:relative;
-  animation:pop 0.3s ease;
-}
-@keyframes pop{
-  from{transform:scale(0.95);opacity:0;}
-  to{transform:scale(1);opacity:1;}
 }
 .modal-content iframe{width:100%;height:100%;border:none;}
 .close{
@@ -196,7 +182,7 @@ h2{font-size:30px;margin-bottom:30px;}
   cursor:pointer;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 footer{
   text-align:center;
   padding:40px;
@@ -204,7 +190,7 @@ footer{
   border-top:1px solid var(--border);
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media(max-width:768px){
   .nav-links{display:none;}
   .hamburger{display:block;}
@@ -245,10 +231,14 @@ footer{
     Software Developer with strong fundamentals in C#, .NET, SQL, and modern web technologies.
     Focused on building clean, scalable, and maintainable applications.
   </p>
-  <div class="badge">🟢 Open to Opportunities</div><br>
 
-  <span class="btn" onclick="openResume()">View Resume</span>
-  <a href="resume.pdf" class="btn" download>Download Resume (PDF)</a>
+  <div class="badge">🟢 Open to Opportunities</div>
+
+  <!-- PERFECTLY MATCHED BUTTONS -->
+  <div class="btn-group">
+    <button class="btn" onclick="openResume()">View Resume</button>
+    <a href="resume.pdf" class="btn" download>Download Resume (PDF)</a>
+  </div>
 </section>
 
 <!-- EXPERIENCE -->
@@ -314,10 +304,6 @@ footer{
 <section id="contact">
   <h2>Contact</h2>
   <p>Email: vishal.dabgar1999@gmail.com</p>
-  <p>
-    <a href="https://www.linkedin.com/in/vishal-dabgar-8b4ba0187/" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/vishaldabgar1999-sudo" target="_blank">GitHub</a>
-  </p>
 </section>
 
 <footer>
@@ -325,7 +311,7 @@ footer{
 </footer>
 
 <!-- RESUME MODAL -->
-<div class="modal" id="resumeModal">
+<div class="modal" id="resumeModal" onclick="closeResume(event)">
   <div class="modal-content">
     <span class="close" onclick="closeResume()">✕</span>
     <iframe src="resume.html"></iframe>
@@ -337,10 +323,13 @@ function toggleMenu(){
   document.getElementById("sidebar").classList.toggle("active");
 }
 function openResume(){
-  document.getElementById("resumeModal").style.display="flex";
+  document.getElementById("resumeModal").classList.add("active");
 }
-function closeResume(){
-  document.getElementById("resumeModal").style.display="none";
+function closeResume(event){
+  const modal = document.getElementById("resumeModal");
+  if(!event || event.target === modal){
+    modal.classList.remove("active");
+  }
 }
 </script>
 
