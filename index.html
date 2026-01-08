@@ -4,9 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vishal Dabgar | .NET & AI Software Developer</title>
-<meta name="description" content="Vishal Dabgar - Full-stack .NET Developer & AI/ML Specialist. Expert in C#, ASP.NET Core, ML.NET, Azure AI, and intelligent applications.">
+<meta name="description" content="Vishal Dabgar - Full-stack .NET Developer & AI/ML Specialist. Expert in C#, ASP.NET Core, ML.NET, Azure AI.">
 <meta name="keywords" content=".NET, C#, AI, ML.NET, Azure AI, Software Developer, Vishal Dabgar, ASP.NET Core">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -45,7 +44,7 @@ body{
   padding:0 20px;
 }
 
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 nav{
   position:fixed;
   top:0;
@@ -99,9 +98,7 @@ nav{
   transition:all 0.3s ease;
 }
 
-.nav-links a:hover::after{
-  width:100%;
-}
+.nav-links a:hover::after{width:100%;}
 
 .hamburger{
   display:none;
@@ -110,7 +107,7 @@ nav{
   color:var(--text);
 }
 
-/* ================= MOBILE SIDEBAR ================= */
+/* MOBILE SIDEBAR */
 .sidebar{
   position:fixed;
   top:0;
@@ -127,11 +124,7 @@ nav{
 
 .sidebar.active{right:0;}
 
-.sidebar ul{
-  list-style:none;
-  margin-top:2rem;
-}
-
+.sidebar ul{list-style:none;margin-top:2rem;}
 .sidebar li{margin:1.5rem 0;}
 .sidebar a{
   color:var(--text);
@@ -144,21 +137,17 @@ nav{
   transition:all 0.3s ease;
 }
 
-.sidebar a:hover{
-  color:var(--primary);
-  padding-left:1rem;
-}
+.sidebar a:hover{color:var(--primary);padding-left:1rem;}
 
 .close-btn{
   position:absolute;
-  top:1rem;
-  right:1.5rem;
+  top:1rem;right:1.5rem;
   font-size:1.8rem;
   cursor:pointer;
   color:var(--muted);
 }
 
-/* ================= HERO ================= */
+/* HERO */
 .hero{
   min-height:100vh;
   display:flex;
@@ -209,18 +198,9 @@ nav{
   animation:pulse 2s infinite;
 }
 
-@keyframes pulse{
-  0%, 100%{opacity:1;}
-  50%{opacity:0.7;}
-}
+@keyframes pulse{0%, 100%{opacity:1;}50%{opacity:0.7;}}
 
-.cta-buttons{
-  display:flex;
-  gap:1rem;
-  justify-content:center;
-  flex-wrap:wrap;
-  margin-top:2rem;
-}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;}
 
 .btn{
   padding:1rem 2rem;
@@ -238,24 +218,12 @@ nav{
   overflow:hidden;
 }
 
-.btn-primary{
-  background:var(--gradient);
-  color:#020617;
-  box-shadow:0 10px 30px rgba(56,189,248,0.4);
-}
+.btn-primary{background:var(--gradient);color:#020617;box-shadow:0 10px 30px rgba(56,189,248,0.4);}
+.btn-secondary{background:transparent;color:var(--text);border:2px solid var(--primary);}
 
-.btn-secondary{
-  background:transparent;
-  color:var(--text);
-  border:2px solid var(--primary);
-}
+.btn:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(56,189,248,0.5);}
 
-.btn:hover{
-  transform:translateY(-4px);
-  box-shadow:0 20px 40px rgba(56,189,248,0.5);
-}
-
-/* ================= SECTIONS ================= */
+/* SECTIONS */
 section{padding:100px 0;}
 section h2{
   font-size:clamp(2rem, 4vw, 3rem);
@@ -264,20 +232,10 @@ section h2{
   font-weight:800;
 }
 
-.section-divider{
-  height:1px;
-  background:var(--border);
-  margin:4rem auto;
-  width:100px;
-}
+.section-divider{height:1px;background:var(--border);margin:4rem auto;width:100px;}
 
-/* ================= CARDS ================= */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
-  gap:2rem;
-  margin-top:2rem;
-}
+/* CARDS & GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:2rem;margin-top:2rem;}
 
 .card{
   background:var(--card);
@@ -292,9 +250,7 @@ section h2{
 .card::before{
   content:'';
   position:absolute;
-  top:0;
-  left:0;
-  right:0;
+  top:0;left:0;right:0;
   height:4px;
   background:var(--gradient);
   transform:scaleX(0);
@@ -302,25 +258,12 @@ section h2{
 }
 
 .card:hover::before{transform:scaleX(1);}
-.card:hover{
-  transform:translateY(-12px);
-  border-color:var(--primary);
-  box-shadow:0 30px 60px rgba(56,189,248,0.3);
-}
+.card:hover{transform:translateY(-12px);border-color:var(--primary);box-shadow:0 30px 60px rgba(56,189,248,0.3);}
 
-.card h3{
-  font-size:1.5rem;
-  margin-bottom:1rem;
-  color:var(--text);
-}
+.card h3{font-size:1.5rem;margin-bottom:1rem;color:var(--text);}
+.card p{color:var(--muted);margin-bottom:1.5rem;line-height:1.7;}
 
-.card p{
-  color:var(--muted);
-  margin-bottom:1.5rem;
-  line-height:1.7;
-}
-
-/* ================= SKILLS ================= */
+/* SKILLS */
 .skills{display:flex;flex-wrap:wrap;gap:0.75rem;}
 .skill-tag{
   padding:0.5rem 1rem;
@@ -333,10 +276,7 @@ section h2{
   transition:all 0.3s ease;
 }
 
-.card:hover .skill-tag{
-  background:var(--primary);
-  color:#020617;
-}
+.card:hover .skill-tag{background:var(--primary);color:#020617;}
 
 .ai-badge{
   background:linear-gradient(135deg, rgba(139,92,246,0.2) 0%, rgba(236,72,153,0.2) 100%);
@@ -344,12 +284,9 @@ section h2{
   color:#a78bfa;
 }
 
-.card:hover .ai-badge{
-  background:var(--ai-gradient);
-  color:#fff;
-}
+.card:hover .ai-badge{background:var(--ai-gradient);color:#fff;}
 
-/* ================= MODAL ================= */
+/* MODAL */
 .modal{
   display:none;
   position:fixed;
@@ -359,6 +296,8 @@ section h2{
   z-index:10000;
   opacity:0;
   transition:all 0.3s ease;
+  justify-content:center;
+  align-items:center;
 }
 
 .modal.active{display:flex;opacity:1;}
@@ -367,22 +306,23 @@ section h2{
   background:var(--card);
   width:95%;
   max-width:1000px;
-  height:90vh;
+  max-height:90vh;
   border-radius:24px;
   overflow:hidden;
   position:relative;
   transform:scale(0.8) translateY(20px);
   transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow:0 50px 100px rgba(0,0,0,0.8);
 }
 
-.modal.active .modal-content{
-  transform:scale(1) translateY(0);
-}
+.modal.active .modal-content{transform:scale(1) translateY(0);}
 
 .modal iframe{
   width:100%;
-  height:100%;
+  height:70vh;
+  max-height:600px;
   border:none;
+  background:var(--bg);
 }
 
 .close-modal{
@@ -396,12 +336,9 @@ section h2{
   transition:all 0.3s ease;
 }
 
-.close-modal:hover{
-  color:var(--text);
-  transform:rotate(90deg);
-}
+.close-modal:hover{color:var(--text);transform:rotate(90deg);}
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 footer{
   background:var(--card);
   text-align:center;
@@ -431,23 +368,21 @@ footer{
   transition:all 0.3s ease;
 }
 
-.social-links a:hover{
-  transform:translateY(-5px) scale(1.1);
-  box-shadow:0 15px 30px rgba(56,189,248,0.5);
-}
+.social-links a:hover{transform:translateY(-5px) scale(1.1);box-shadow:0 15px 30px rgba(56,189,248,0.5);}
 
 .stats{
   display:flex;
   justify-content:center;
   gap:3rem;
-  margin:2rem 0;
+  margin:4rem 0;
   color:var(--muted);
+  flex-wrap:wrap;
 }
 
 .stat-item{text-align:center;}
 .stat-number{font-size:2rem;font-weight:800;color:var(--primary);display:block;}
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 768px){
   .nav-links{display:none;}
   .hamburger{display:block;}
@@ -456,19 +391,17 @@ footer{
   section{padding:60px 0;}
   .grid{grid-template-columns:1fr;gap:1.5rem;}
   .stats{flex-direction:column;gap:1.5rem;}
+  .social-links{gap:1.5rem;flex-wrap:wrap;}
 }
 
 @media (max-width: 480px){
   .container{padding:0 16px;}
   .card{padding:2rem;}
+  .modal iframe{height:80vh;}
 }
 
-/* ================= ANIMATIONS ================= */
-@keyframes fadeInUp{
-  from{opacity:0;transform:translateY(30px);}
-  to{opacity:1;transform:translateY(0);}
-}
-
+/* ANIMATIONS */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
 .card{animation:fadeInUp 0.6s ease forwards;}
 .card:nth-child(1){animation-delay:0.1s;}
 .card:nth-child(2){animation-delay:0.2s;}
@@ -484,7 +417,7 @@ footer{
   <ul>
     <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
     <li><a href="#projects"><i class="fas fa-brain"></i> AI Projects</a></li>
-    <li><a href="#skills"><i class="fas fa-robot"></i> AI Skills</a></li>
+    <li><a href="#skills"><i class="fas fa-robot"></i> Skills</a></li>
     <li><a href="#education"><i class="fas fa-user-graduate"></i> Education</a></li>
     <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
   </ul>
@@ -497,36 +430,29 @@ footer{
       <div class="logo">Vishal Dabgar</div>
       <ul class="nav-links">
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">AI Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="hamburger" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </div>
+      <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
     </div>
   </div>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <div class="hero-content">
       <h1>Hi, I'm <span>Vishal Dabgar</span></h1>
-      <p>Full-stack .NET Developer & AI/ML Specialist building intelligent applications with C#, ASP.NET Core, ML.NET, Azure AI, and modern AI frameworks.</p>
+      <p>Full-stack .NET Developer & AI/ML Specialist building intelligent applications with C#, ASP.NET Core, ML.NET, Azure AI.</p>
       <div class="status-badge">
         <i class="fas fa-circle" style="color:var(--success);"></i>
         AI-Powered Software Development | Open to Opportunities
       </div>
-      
       <div class="cta-buttons">
-        <a href="#contact" class="btn btn-primary">
-          <i class="fas fa-rocket"></i> Get In Touch
-        </a>
-        <button class="btn btn-secondary" onclick="openResume()">
-          <i class="fas fa-file-pdf"></i> View Resume
-        </button>
+        <a href="#contact" class="btn btn-primary"><i class="fas fa-rocket"></i> Get In Touch</a>
+        <button class="btn btn-secondary" onclick="openResume()"><i class="fas fa-file-pdf"></i> View Resume</button>
       </div>
     </div>
   </div>
@@ -535,28 +461,17 @@ footer{
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="container">
-    <h2 style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AI-Enhanced Development</h2>
+    <h2 style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Experience</h2>
     <div class="grid">
       <div class="card">
         <h3><i class="fas fa-laptop-code"></i> AI Software Developer</h3>
         <p><strong>Academic & Production Projects</strong> (2023 - Present)</p>
-        <p>Integrated ML.NET and Azure AI services into enterprise .NET applications. Developed intelligent systems combining C#, ASP.NET Core, and modern AI/ML pipelines with production-grade MLOps.</p>
+        <p>Integrated ML.NET and Azure AI into enterprise .NET applications. Built intelligent systems with C#, ASP.NET Core, and production-grade MLOps.</p>
         <div class="skills">
-          <span class="skill-tag">ML.NET Production</span>
-          <span class="skill-tag ai-badge">Azure AI Integration</span>
+          <span class="skill-tag ai-badge">ML.NET Production</span>
+          <span class="skill-tag ai-badge">Azure AI</span>
           <span class="skill-tag">Semantic Kernel</span>
-          <span class="skill-tag ai-badge">ONNX Model Serving</span>
-        </div>
-      </div>
-      
-      <div class="card">
-        <h3><i class="fas fa-rocket"></i> AI Innovation Projects</h3>
-        <p>Built end-to-end AI solutions including model training, API deployment, real-time inference, and monitoring dashboards using .NET and modern AI tooling.</p>
-        <div class="skills">
-          <span class="skill-tag ai-badge">LangChain.NET</span>
-          <span class="skill-tag ai-badge">RAG Pipelines</span>
-          <span class="skill-tag ai-badge">Computer Vision</span>
-          <span class="skill-tag">MLOps</span>
+          <span class="skill-tag ai-badge">ONNX Models</span>
         </div>
       </div>
     </div>
@@ -566,52 +481,46 @@ footer{
 <!-- PROJECTS -->
 <section id="projects" style="background:rgba(15,23,42,0.5);">
   <div class="container">
-    <h2 style="background:var(--ai-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AI-Powered Projects</h2>
+    <h2 style="background:var(--ai-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AI Projects</h2>
     <div class="grid">
       <div class="card">
         <h3><i class="fas fa-brain"></i> Smart Restaurant AI</h3>
-        <p>AI-driven food delivery platform with demand prediction, personalized recommendations, and intelligent order routing using ML.NET and TensorFlow.NET.</p>
+        <p>AI-driven food delivery with demand prediction, recommendations using ML.NET & TensorFlow.NET.</p>
         <div class="skills">
           <span class="skill-tag ai-badge">ML.NET</span>
           <span class="skill-tag ai-badge">TensorFlow.NET</span>
           <span class="skill-tag">ASP.NET Core</span>
-          <span class="skill-tag">SQL Server</span>
-          <span class="skill-tag ai-badge">Recommendation Engine</span>
+          <span class="skill-tag ai-badge">Recommendations</span>
         </div>
       </div>
-      
       <div class="card">
         <h3><i class="fas fa-robot"></i> Document AI Analyzer</h3>
-        <p>Intelligent document processing system with OCR, NLP sentiment analysis, and contract clause extraction using Azure Cognitive Services and ONNX models.</p>
+        <p>Document processing with OCR, NLP, contract extraction using Azure AI & ONNX models.</p>
         <div class="skills">
           <span class="skill-tag ai-badge">Azure AI</span>
           <span class="skill-tag ai-badge">ONNX Runtime</span>
           <span class="skill-tag ai-badge">NLP</span>
           <span class="skill-tag">ASP.NET Core API</span>
-          <span class="skill-tag ai-badge">Tesseract OCR</span>
         </div>
       </div>
-      
       <div class="card">
         <h3><i class="fas fa-chart-line"></i> Predictive Legal AI</h3>
-        <p>Legal case outcome prediction system using machine learning models trained on historical case data with explainable AI (SHAP) and automated reporting.</p>
+        <p>Case outcome prediction with explainable AI (SHAP) and automated reporting dashboards.</p>
         <div class="skills">
           <span class="skill-tag ai-badge">ML.NET</span>
-          <span class="skill-tag ai-badge">SHAP Explainer</span>
+          <span class="skill-tag ai-badge">SHAP</span>
           <span class="skill-tag">Blazor</span>
-          <span class="skill-tag ai-badge">SQL Server ML</span>
           <span class="skill-tag ai-badge">Predictive Analytics</span>
         </div>
       </div>
-
       <div class="card">
-        <h3><i class="fas fa-image"></i> Image Recognition Hub</h3>
-        <p>Multi-model image classification system supporting YOLO, ResNet, and custom CNNs with real-time inference and model versioning.</p>
+        <h3><i class="fas fa-utensils"></i> Food Delivery System</h3>
+        <p>Complete food ordering platform with restaurant management and order tracking.</p>
         <div class="skills">
-          <span class="skill-tag ai-badge">ONNX.NET</span>
-          <span class="skill-tag ai-badge">YOLOv8</span>
-          <span class="skill-tag ai-badge">Computer Vision</span>
-          <span class="skill-tag ai-badge">GPU Acceleration</span>
+          <span class="skill-tag">ASP.NET Core MVC</span>
+          <span class="skill-tag">Entity Framework</span>
+          <span class="skill-tag">SQL Server</span>
+          <span class="skill-tag">Bootstrap 5</span>
         </div>
       </div>
     </div>
@@ -621,48 +530,23 @@ footer{
 <!-- SKILLS -->
 <section id="skills">
   <div class="container">
-    <h2 style="background:var(--ai-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AI & .NET Expertise</h2>
+    <h2 style="background:var(--ai-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Skills</h2>
     <div class="grid">
       <div class="card">
         <h3><i class="fas fa-brain"></i> AI/ML Frameworks</h3>
-        <p><strong>Primary:</strong> ML.NET, TensorFlow.NET, ONNX Runtime<br>
-        <strong>Cloud AI:</strong> Azure Cognitive Services, AWS SageMaker<br>
-        <strong>Specialized:</strong> LangChain.NET, Semantic Kernel</p>
+        <p>ML.NET, TensorFlow.NET, ONNX Runtime, Semantic Kernel, LangChain.NET, Azure AI Services</p>
       </div>
-      
       <div class="card">
-        <h3><i class="fas fa-cogs"></i> .NET AI Stack</h3>
-        <p>ASP.NET Core + ML.NET, Blazor with AI components, SignalR for real-time AI, gRPC for model serving, Clean Architecture with AI services</p>
+        <h3><i class="fas fa-cogs"></i> .NET Stack</h3>
+        <p>ASP.NET Core, Blazor, Entity Framework Core, SignalR, gRPC, Clean Architecture</p>
       </div>
-      
       <div class="card">
-        <h3><i class="fas fa-robot"></i> AI Applications</h3>
-        <p>NLP (BERT, GPT integration), Computer Vision (YOLO, CNNs), Recommendation Systems, Predictive Analytics, Explainable AI (SHAP/LIME), RAG Systems</p>
+        <h3><i class="fas fa-database"></i> Database</h3>
+        <p>SQL Server, Stored Procedures, SSRS, Query Optimization, Database Design</p>
       </div>
-
       <div class="card">
-        <h3><i class="fas fa-cloud"></i> MLOps & Deployment</h3>
-        <p>Azure ML, Docker + Kubernetes, Model versioning, CI/CD pipelines, A/B testing, Monitoring with Application Insights</p>
-      </div>
-    </div>
-    
-    <div style="text-align:center; margin-top:3rem;">
-      <h3 style="margin-bottom:1.5rem; color:var(--text);">AI Technologies Mastered</h3>
-      <div class="skills" style="justify-content:center; max-width:900px; margin:0 auto; flex-wrap:wrap;">
-        <span class="skill-tag ai-badge">ML.NET</span>
-        <span class="skill-tag ai-badge">TensorFlow.NET</span>
-        <span class="skill-tag ai-badge">ONNX</span>
-        <span class="skill-tag ai-badge">Azure AI</span>
-        <span class="skill-tag ai-badge">LangChain.NET</span>
-        <span class="skill-tag ai-badge">YOLO</span>
-        <span class="skill-tag ai-badge">BERT</span>
-        <span class="skill-tag ai-badge">Semantic Kernel</span>
-        <span class="skill-tag ai-badge">GPU Acceleration</span>
-        <span class="skill-tag ai-badge">RAG Systems</span>
-        <span class="skill-tag">ASP.NET Core</span>
-        <span class="skill-tag">C# 12</span>
-        <span class="skill-tag">Blazor</span>
-        <span class="skill-tag">SQL Server</span>
+        <h3><i class="fas fa-tools"></i> DevOps</h3>
+        <p>Docker, Azure DevOps, Git/GitHub, CI/CD, Application Insights</p>
       </div>
     </div>
   </div>
@@ -675,13 +559,31 @@ footer{
     <div class="grid">
       <div class="card">
         <h3><i class="fas fa-graduation-cap"></i> Master of Computer Applications (MCA)</h3>
-        <p>Sardar Patel University, Vallabh Vidyanagar<br><strong>2021 - 2023</strong></p>
-        <p>CGPA: 8.7/10 | AI/ML & Software Engineering Specialization</p>
+        <p>Sardar Patel University | <strong>2021-2023</strong><br>CGPA: 8.7/10 | AI/ML Specialization</p>
       </div>
       <div class="card">
         <h3><i class="fas fa-user-graduate"></i> Bachelor of Computer Applications (BCA)</h3>
-        <p>Sardar Patel University, Vallabh Vidyanagar<br><strong>2018 - 2021</strong></p>
-        <p>Percentage: 82% | Programming & Database Systems</p>
+        <p>Sardar Patel University | <strong>2018-2021</strong><br>Percentage: 82%</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section>
+  <div class="container">
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-number">12+</span>
+        AI Projects
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">3+</span>
+        Years Experience
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">25+</span>
+        Technologies
       </div>
     </div>
   </div>
@@ -690,59 +592,43 @@ footer{
 <!-- CONTACT -->
 <section id="contact">
   <div class="container">
-    <h2 style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Let's Connect</h2>
-    <div style="max-width:600px; margin:0 auto; text-align:center;">
-      <p style="font-size:1.2rem; color:var(--muted); margin-bottom:2rem;">
-        Actively seeking .NET + AI development opportunities. Let's build intelligent applications together!
+    <h2 style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Contact</h2>
+    <div style="max-width:600px;margin:0 auto;text-align:center;">
+      <p style="font-size:1.2rem;color:var(--muted);margin-bottom:2rem;">
+        Open to .NET + AI development opportunities
       </p>
-      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; font-size:1.1rem; margin-bottom:2rem;">
-        <div style="display:flex; align-items:center; gap:0.5rem;"><i class="fas fa-envelope"></i> vishal.dabgar1999@gmail.com</div>
-        <div style="display:flex; align-items:center; gap:0.5rem;"><i class="fab fa-linkedin"></i> linkedin.com/in/vishaldabgar</div>
-        <div style="display:flex; align-items:center; gap:0.5rem;"><i class="fab fa-github"></i> github.com/vishaldabgar</div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;font-size:1.1rem;margin-bottom:2rem;">
+        <div style="display:flex;align-items:center;gap:0.5rem;">
+          <i class="fas fa-envelope"></i> vishal.dabgar1999@gmail.com
+        </div>
+        <div style="display:flex;align-items:center;gap:0.5rem;">
+          <i class="fab fa-linkedin"></i> linkedin.com/in/vishal-dabgar-8b4ba0187
+        </div>
+        <div style="display:flex;align-items:center;gap:0.5rem;">
+          <i class="fab fa-github"></i> github.com/vishaldabgar1999-sudo
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
-<div class="stats">
-  <div class="stat-item">
-    <span class="stat-number">12+</span>
-    AI Projects
-  </div>
-  <div class="stat-item">
-    <span class="stat-number">3+</span>
-    Years Experience
-  </div>
-  <div class="stat-item">
-    <span class="stat-number">50+</span>
-    Technologies
-  </div>
-</div>
-
 <!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="social-links">
-      <a href="https://linkedin.com/in/vishaldabgar" target="_blank" aria-label="LinkedIn" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/vishaldabgar" target="_blank" aria-label="GitHub" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="mailto:vishal.dabgar1999@gmail.com" aria-label="Email" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
+      <a href="https://linkedin.com/in/vishal-dabgar-8b4ba0187" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/vishaldabgar1999-sudo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:vishal.dabgar1999@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
-    <p style="color:var(--muted); margin-top:1rem;">© 2026 Vishal Dabgar. Built with ❤️ using HTML, CSS & JavaScript.</p>
+    <p style="color:var(--muted);margin-top:1rem;">© 2026 Vishal Dabgar. Built with ❤️</p>
   </div>
 </footer>
 
 <!-- RESUME MODAL -->
-<div class="modal" id="resumeModal" onclick="closeResume(event)">
-  <div class="modal-content" onclick="event.stopPropagation()">
+<div class="modal" id="resumeModal">
+  <div class="modal-content">
     <span class="close-modal" onclick="closeResume()">✕</span>
-    <iframe src="about:blank" title="Resume - Vishal Dabgar"></iframe>
+    <iframe id="resumeFrame" src="about:blank" title="Resume"></iframe>
   </div>
 </div>
 
@@ -752,13 +638,139 @@ function toggleMenu(){
 }
 
 function openResume(){
+  const resumeContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vishal Dabgar - .NET & AI Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --bg:#020617;--card:#0f172a;--border:#1e293b;--text:#f8fafc;--muted:#94a3b8;
+  --primary:#38bdf8;--success:#22c55e;--ai-primary:#8b5cf6;
+  --gradient:linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+  --ai-gradient:linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+}
+*{
+  margin:0;padding:0;box-sizing:border-box;
+  font-family:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+html,body{background:var(--bg);color:var(--text);height:100%;overflow:auto;}
+body{padding:40px;max-width:900px;margin:0 auto;line-height:1.7;}
+.header{text-align:center;margin-bottom:40px;padding-bottom:30px;border-bottom:2px solid var(--border);}
+h1{font-size:2.8rem;font-weight:800;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px;}
+.title{font-size:1.3rem;color:var(--primary);font-weight:600;margin-bottom:20px;}
+.contact{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;font-size:1rem;color:var(--muted);margin-bottom:20px;}
+.contact a{color:var(--primary);text-decoration:none;transition:all 0.3s ease;}
+.contact a:hover{color:#60c7ff;}
+h2{font-size:1.6rem;margin:40px 0 20px 0;padding-bottom:12px;border-bottom:2px solid var(--border);display:flex;align-items:center;gap:12px;font-weight:700;}
+h2 i{color:var(--primary);}
+.summary{background:var(--card);padding:25px;border-radius:16px;border:1px solid var(--border);margin:20px 0;line-height:1.8;font-size:1.05rem;}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:20px;margin:20px 0;}
+.skill-category{background:var(--card);padding:25px;border-radius:16px;border:1px solid var(--border);}
+.skill-category h3{font-size:1.3rem;margin-bottom:15px;color:var(--text);display:flex;align-items:center;gap:10px;}
+.skill-category ul{list-style:none;padding:0;}
+.skill-category li{padding:8px 12px;margin:6px 0;background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.2);border-radius:8px;font-weight:500;}
+.ai-skill{background:linear-gradient(135deg, rgba(139,92,246,0.2), rgba(236,72,153,0.2));border-color:rgba(139,92,246,0.4);}
+.project{background:var(--card);padding:25px;border-radius:16px;border-left:4px solid var(--primary);margin:20px 0;}
+.project-title{font-size:1.4rem;margin-bottom:12px;color:var(--text);display:flex;align-items:center;gap:10px;}
+.project-tech{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0;}
+.tech-tag{padding:6px 14px;background:rgba(56,189,248,0.15);color:var(--primary);border:1px solid rgba(56,189,248,0.3);border-radius:20px;font-size:0.9rem;font-weight:500;}
+.ai-tech-tag{background:linear-gradient(135deg, rgba(139,92,246,0.2), rgba(236,72,153,0.2));color:#a78bfa;border-color:rgba(139,92,246,0.4);}
+.education{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px;margin-top:20px;}
+.degree{background:var(--card);padding:25px;border-radius:16px;border:1px solid var(--border);}
+.degree h3{font-size:1.3rem;margin-bottom:8px;color:var(--text);}
+.degree p{color:var(--muted);margin:4px 0;}
+.stats{display:flex;justify-content:space-around;background:var(--card);padding:30px;border-radius:16px;margin:40px 0;text-align:center;}
+.stat{flex:1;}
+.stat-number{font-size:2.5rem;font-weight:800;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;}
+@media (max-width:768px){body{padding:20px;}h1{font-size:2.2rem;}.contact{flex-direction:column;gap:12px;}.skills-grid,.education{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Vishal Dabgar</h1>
+  <div class="title">.NET Developer & AI/ML Specialist</div>
+  <div class="contact">
+    <a href="mailto:vishal.dabgar1999@gmail.com"><i class="fas fa-envelope"></i> vishal.dabgar1999@gmail.com</a>
+    <a href="https://linkedin.com/in/vishal-dabgar-8b4ba0187" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/vishal-dabgar-8b4ba0187</a>
+    <a href="https://github.com/vishaldabgar1999-sudo" target="_blank"><i class="fab fa-github"></i> github.com/vishaldabgar1999-sudo</a>
+  </div>
+</div>
+<div class="summary"><strong>PROFESSIONAL SUMMARY</strong><br><br>Full-stack .NET Developer & AI/ML Specialist with expertise in C#, ASP.NET Core, ML.NET, Azure AI. Experienced in building intelligent applications with modern .NET stack and cutting-edge AI/ML technologies.</div>
+<div class="stats">
+  <div class="stat"><span class="stat-number">12+</span>AI Projects</div>
+  <div class="stat"><span class="stat-number">3+</span>Years Experience</div>
+  <div class="stat"><span class="stat-number">25+</span>Technologies</div>
+</div>
+<h2><i class="fas fa-brain"></i> AI/ML Skills</h2>
+<div class="skills-grid">
+  <div class="skill-category">
+    <h3><i class="fas fa-robot"></i> AI Frameworks</h3>
+    <ul>
+      <li class="ai-skill">ML.NET</li><li class="ai-skill">TensorFlow.NET</li><li class="ai-skill">ONNX Runtime</li>
+      <li class="ai-skill">Semantic Kernel</li><li class="ai-skill">LangChain.NET</li>
+    </ul>
+  </div>
+  <div class="skill-category">
+    <h3><i class="fas fa-cloud"></i> Cloud AI</h3>
+    <ul>
+      <li class="ai-skill">Azure Cognitive Services</li><li class="ai-skill">Azure ML</li>
+      <li class="ai-skill">YOLOv8</li><li class="ai-skill">RAG Systems</li>
+    </ul>
+  </div>
+</div>
+<h2><i class="fas fa-cogs"></i> Technical Skills</h2>
+<div class="skills-grid">
+  <div class="skill-category">
+    <h3><i class="fas fa-laptop-code"></i> Backend</h3>
+    <ul>
+      <li>C# 12, ASP.NET Core</li><li>Entity Framework Core</li>
+      <li>Blazor, SignalR</li><li>gRPC</li>
+    </ul>
+  </div>
+  <div class="skill-category">
+    <h3><i class="fas fa-database"></i> Database</h3>
+    <ul>
+      <li>SQL Server</li><li>Stored Procedures</li>
+      <li>SSRS Reporting</li>
+    </ul>
+  </div>
+</div>
+<h2><i class="fas fa-project-diagram"></i> Projects</h2>
+<div class="project">
+  <div class="project-title"><i class="fas fa-brain"></i> Smart Restaurant AI</div>
+  <p>AI-powered food delivery with ML demand prediction using ML.NET.</p>
+  <div class="project-tech">
+    <span class="tech-tag ai-tech-tag">ML.NET</span><span class="tech-tag">ASP.NET Core</span>
+  </div>
+</div>
+<div class="project">
+  <div class="project-title"><i class="fas fa-robot"></i> Document AI Analyzer</div>
+  <p>OCR and NLP document processing with Azure AI services.</p>
+  <div class="project-tech">
+    <span class="tech-tag ai-tech-tag">Azure AI</span><span class="tech-tag ai-tech-tag">ONNX</span>
+  </div>
+</div>
+<h2><i class="fas fa-graduation-cap"></i> Education</h2>
+<div class="education">
+  <div class="degree">
+    <h3>Master of Computer Applications (MCA)</h3>
+    <p>Sardar Patel University</p><p><strong>2021-2023</strong> | CGPA: 8.7/10</p>
+  </div>
+  <div class="degree">
+    <h3>Bachelor of Computer Applications (BCA)</h3>
+    <p>Sardar Patel University</p><p><strong>2018-2021</strong> | 82%</p>
+  </div>
+</div>
+</body></html>`;
+  
+  document.getElementById('resumeFrame').srcdoc = resumeContent;
   document.getElementById("resumeModal").classList.add("active");
 }
 
-function closeResume(event){
-  if(event && event.target.id === "resumeModal"){
-    document.getElementById("resumeModal").classList.remove("active");
-  }
+function closeResume(){
+  document.getElementById("resumeModal").classList.remove("active");
 }
 
 // Smooth scrolling
@@ -766,9 +778,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
-    if(target){
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    if(target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     document.getElementById("sidebar").classList.remove("active");
   });
 });
@@ -776,18 +786,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav');
-  if(window.scrollY > 50){
-    nav.style.background = 'rgba(2,6,23,0.98)';
-  } else {
-    nav.style.background = 'rgba(2,6,23,0.95)';
-  }
+  nav.style.background = window.scrollY > 50 ? 'rgba(2,6,23,0.98)' : 'rgba(2,6,23,0.95)';
 });
 
-// Close modal on Escape key
+// Modal controls
+document.getElementById("resumeModal").addEventListener('click', function(e) {
+  if(e.target === this) closeResume();
+});
+
 document.addEventListener('keydown', (e) => {
-  if(e.key === 'Escape'){
-    document.getElementById("resumeModal").classList.remove("active");
-  }
+  if(e.key === 'Escape') closeResume();
 });
 </script>
 
